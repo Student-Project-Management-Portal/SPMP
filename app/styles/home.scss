@@ -1,0 +1,7 @@
+@import './theme.scss';
+
+
+body{
+    @include flex(center,center);
+    min-height: 100vh;
+}

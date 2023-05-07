@@ -1,0 +1,22 @@
+$color1: #f6f6f6;
+$color2: #c7ffd8;
+$color3: #98ded9;
+$color4: #161d6f;
+$color5: #3A98B9;
+$color6: #19A7CE;
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+
+@mixin glassmorphism (){
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 22px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  border-radius: 10px;
+  border: none;
+}

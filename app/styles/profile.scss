@@ -1,0 +1,106 @@
+@import "./theme.scss";
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600&display=swap");
+
+#profile {
+  @include flex(center, center);
+  min-height: 100vh;
+  background-color: $color1;
+}
+
+#project {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Kanit", sans-serif;
+  @include glassmorphism();
+  z-index: 1;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: $color3;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: -2;
+    transform: translate(380px, -100px);
+  }
+  > .upBox {
+    width: 100%;
+    height: 80%;
+    > .leftBox {
+      width: 300px;
+      padding: 10px 19px;
+      @include flex(center, flex-start);
+      flex-direction: column;
+      gap: 0.7rem;
+      > h1 {
+        color: $color6;
+        opacity: 80%;
+        font-weight: 500;
+      }
+      > .links {
+        @include flex(center, center);
+        gap: 0.5rem;
+        > a {
+          &:hover {
+            color: $color5;
+          }
+        }
+      }
+      > .techStack {
+        width: 100%;
+        @include flex(center, center);
+        gap: 0.5rem;
+        > h4 {
+          font-weight: 400;
+        }
+        > p {
+          font-weight: 300;
+        }
+      }
+    }
+    > .teamBox {
+      width: 300px;
+      border: 1px solid #000;
+      border-radius: 10px;
+      padding: 10px;
+      > h3 {
+        font-weight: 400;
+        text-align: center;
+      }
+      > .teamName {
+        margin-top: 10px;
+        > h4 {
+          @include flex(space-evenly, center);
+          > a {
+            color: $color4;
+            font-size: 0.9rem;
+            &:hover {
+              color: $color5;
+            }
+          }
+        }
+      }
+    }
+  }
+  > .bottomBox {
+    width: 100%;
+    height: 40px;
+    line-height: 0;
+    @include flex(center, center);
+    gap: 1.8rem;
+    transition: 0.5s;
+    > a {
+        @include flex(center,center);
+        gap: 0.2rem;
+      &:hover {
+        color: $color5;
+      }
+    }
+  }
+}

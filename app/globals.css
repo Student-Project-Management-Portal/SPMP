@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.tshadow{
+    text-shadow: 1px 1px 4px gray;
+}

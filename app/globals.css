@@ -6,3 +6,6 @@
 .tshadow{
     text-shadow: 1px 1px 4px gray;
 }
+textarea:focus, input:focus{
+    outline: none;
+}

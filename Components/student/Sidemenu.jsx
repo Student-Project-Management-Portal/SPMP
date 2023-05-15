@@ -1,7 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import miet from "../../images/MIET_Logo.png";
-import profile from "../../images/user.png";
 import { TbLayoutDashboard, TbFileCertificate } from "react-icons/tb";
 import { GiNotebook } from "react-icons/gi";
 import { BiSupport } from "react-icons/bi";
@@ -16,11 +14,11 @@ const Sidemenu = () => {
       <div className="upperContainer w-full flex items-center justify-evenly flex-col gap-6 ">
         <div className="img w-full h-[100px] flex items-center justify-evenly">
           <h1 className="text-3xl font-medium ">SPMP</h1>
-          <Image src={miet} className="w-[100px] h-[50px]" />
+          <Image src="/images/MIET_Logo.png" className="w-[100px] h-[50px]" width={100} height={100}/>
         </div>
         <div className="details w-full h-full flex flex-col gap-3">
           <div className="name bg-[#ebebeb21] border rounded-[35px] flex items-center px-3 gap-3 h-[60px]">
-            <Image className="h-[40px] w-[40px] rounded-full" src={profile} />
+            <Image className="h-[40px] w-[40px] rounded-full" src="/images/user.png" width={100} height={100}/>
             <h1 className="text-xl">Hey, Dev</h1>
           </div>
           <div className="details2 w-full px-3 text-sm">

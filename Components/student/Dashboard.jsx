@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import profile from "../../images/user.png";
 import { BsSearch } from "react-icons/bs";
 import { GoSettings } from "react-icons/go";
 import { IoMdNotificationsOutline } from "react-icons/io";
@@ -98,7 +97,7 @@ const Dashboard = () => {
             <div className="rightContainer w-50% h-full flex flex-col gap-6">
                 <div className="aboutProfile flex items-end min-w-[400px] h-[450px] rounded-2xl">
                     <div className="aboutprofileBox relative flex justify-center min-w-full h-[380px] shadow-xl bg-[linear-gradient(#3964dadb,#2F57C1)] rounded-2xl">
-                        <Image src={profile} alt="" className="h-[200px] w-[200px] rounded-full translate-y-[-70px]"/>
+                        <Image src="/images/user.png" alt="" className="h-[200px] w-[200px] rounded-full translate-y-[-70px]" width={100} height={100}/>
                     </div>
                 </div>
                 <div className="aboutskill w-full h-[200px] shadow-xl bg-white rounded-2xl grow">

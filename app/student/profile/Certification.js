@@ -4,7 +4,7 @@ import React from 'react'
 const Certification = () => {
   return (
     <div  className="flex w-5/6 flex-col lg:flex-row m-auto bg-col1 drop-shadow-lg rounded-md pb-4 lg:pb-0">
-        <Image src={require("../../../images/certificate.png")} className='w-full lg:w-1/3'  width={"320"} height={"160"} alt='certificate' />
+        <Image src="/images/certificate.png" className='w-full lg:w-1/3'  width={"320"} height={"160"} alt='certificate' />
         <div className='w-full lg:w-2/3 text-left flex flex-col space-y-3 ml-3 justify-center'>
             <h2 className='text-bold text-lg'>MicrosoftCertified Azure Fundamentals</h2>
             <p className='text-gray-500'>Issued Apr 2023</p>

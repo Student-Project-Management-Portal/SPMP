@@ -3,9 +3,13 @@
 @import "tailwindcss/utilities";
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
-.tshadow{
+/* .tshadow{
     text-shadow: 1px 1px 4px gray;
-}
+} */
 textarea:focus, input:focus{
     outline: none;
+}
+
+body{
+    @apply bg-gray-200
 }

@@ -1,14 +1,15 @@
 import React from "react";
-import {tempData} from "./data";
-import ProjectCardComp from "@/Components/ProjectCardComp";
-import Heading from "@/Components/Heading";
-import Details from "@/Components/Details";
-import Certification from "./Certification";
+// import {tempData} from "./data";
+// import ProjectCardComp from "@/Components/ProjectCardComp";
+// import Heading from "@/Components/Heading";
+// import Details from "@/Components/Details";
+// import Certification from "./Certification";
 import Sidemenu from "../../../Components/student/Sidemenu";
-import "../../../styles/student/profile.scss";
 import Dashboard from "@/Components/student/Dashboard";
+import "../../../styles/student/profile.scss";
 
-const layout = () => {
+const layout = (Component, pageProps) => {
+  
   // console.log(tempData)
   return (
     // <section className="flex flex-col lg:flex-row bg-gray-100">

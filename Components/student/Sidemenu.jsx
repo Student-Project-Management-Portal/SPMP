@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import miet from "../../images/MIET_Logo.png";
-import profile from "../../images/user.png";
 import { TbLayoutDashboard, TbFileCertificate } from "react-icons/tb";
 import { GiNotebook } from "react-icons/gi";
 import { BiSupport } from "react-icons/bi";
+import miet from "../../public/images/MIET_Logo.png"
+import profile from "../../public/images/user.png";
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 import "../../styles/student/profile.scss";
 
@@ -23,20 +23,13 @@ const Sidemenu = () => {
     >
       <div className="upperContainer w-full flex items-center justify-evenly flex-col gap-6 ">
         <div className="img w-full h-[100px] flex items-center justify-evenly">
-          {menuopen ? null : <h1 className="text-3xl font-medium ">SPMP</h1>}
-          {menuopen ? null : (
-            <Image src={miet} className="w-[100px] h-[50px]" />
-          )}
-          {menuopen ? (
-            <AiOutlineMenuUnfold className="text-3xl" onClick={handleClick} />
-          ) : (
-            <AiOutlineMenuFold className="text-3xl" onClick={handleClick} />
-          )}
+          <h1 className="text-3xl font-medium ">SPMP</h1>
+          <Image src={miet} className="w-[100px] h-[50px]" />
         </div>
         <div className="details w-full h-full flex flex-col gap-3">
-          <div className={`name   rounded-[35px] flex items-center gap-3 h-[60px] ${menuopen ?"px-0 border-none bg-transparent":"px-3 border bg-[#ebebeb21]"}`}>
+          <div className="name bg-[#ebebeb21] border rounded-[35px] flex items-center px-3 gap-3 h-[60px]">
             <Image className="h-[40px] w-[40px] rounded-full" src={profile} />
-            {menuopen ? null : <h1 className="text-xl">Hey, Dev</h1>}
+            <h1 className="text-xl">Hey, Dev</h1>
           </div>
           <div className="details2 w-full px-3 text-sm">
             {menuopen ? null : <p>Computer Science & Information Technology</p>}

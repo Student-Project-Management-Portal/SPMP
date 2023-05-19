@@ -6,7 +6,7 @@ import {TbWorldWww} from "react-icons/tb"
 const Details = () => {
   return (
     <div className='mx-3 flex flex-col  content-center text-center px-3 ' >
-        <Image className='w-3/6 sm:w-1/3 md:w-1/4 lg:w-1/2 rounded-full mx-auto my-5 shadow-lg'  src={require("../images/user.png")} width={"100"} height={"100"} alt='user' />
+        <Image className='w-3/6 sm:w-1/3 md:w-1/4 lg:w-1/2 rounded-full mx-auto my-5 shadow-lg'  src="/images/user.png" width={"100"} height={"100"} alt='user' />
         <h1 className='text-3xl text-gray-700 uppercase tshadow text-bold' >Abhishek </h1>
         <br />
         <div className='text-center lg:text-left text-md  text-gray-500 border-t-4 border-blue-200 pt-3 space-y-4 '>

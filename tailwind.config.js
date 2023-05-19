@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        '128': '32rem',
+      },
       colors: {
         "col1":"#F6F6F6",
         "col2":"#C7FFD8",

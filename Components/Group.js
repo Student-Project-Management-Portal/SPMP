@@ -11,7 +11,7 @@ const Group = (props) => {
     }
   */
   return (
-    <div className='w-[350px] rounded-xl drop-shadow-xl aspect-square bg-col1 overflow-hidden' >
+    <div className='w-[350px] rounded-xl drop-shadow-xl aspect-square m-3 bg-col1 overflow-hidden' >
       {/* upper */}
       <div className="w-full text-center py-4 border-b-2 shadow-xl bg-col3">
           <h2 className='text-xl uppercase'>Group - {props.group?props.group:2}</h2>

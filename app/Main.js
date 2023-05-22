@@ -1,15 +1,25 @@
 "use client"
-import Link from 'next/link'
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Group from "@/Components/Group"
 
+
 const Main = () => {
+    const [sideBarShow, setSideBarShow] = useState(true)
     const choose = useRef("")
     console.log(choose.current)
+    const Search = ()=>{
+      if(window.innerWidth<728 && sideBarShow){
+        choose.current.style.left="-100000px"
+        setSideBarShow(false)
+      }else{
+        choose.current.style.left="0px"
+        setSideBarShow(true)
+      }
+    }
   return (
   <>
     {/* Left side */}
-      <div ref={choose} className='w-screen md:w-1/5   min-h-screen  fixed top-0 left-0 flex items-center space-y-3 pt-10 flex-col overflow-hidden bg-slate-300 z-10'>
+      <div ref={choose}  className={`  w-screen  md:w-2/5 lg:w-1/5   min-h-screen  fixed top-0  flex items-center space-y-3 pt-10 flex-col overflow-hidden bg-slate-300 z-10`} style={{left:"0px"}}>
         <h2 className='font-bold text-xl mb-3'>Session:</h2>
        <div className='w-screen md:w-full ' >
        <select className='block w-5/6 m-auto border-2 drop-shadow outline-0'>
@@ -30,12 +40,12 @@ const Main = () => {
         </select><br />
        
        </div>
-       <button className="button">Search</button>
+       <button className="button" onClick={Search}>Search</button>
 
     </div>
 
     {/* right side */}
-    <div className='w-screen md:w-4/5 space-y-5 right-0 absolute top-0  bg-slate-200 center md:space-x-6 min-h-screen py-5 flex-wrap '>
+    <div className='w-screen md:w-3/5 lg:w-4/5 space-y-5 right-0 absolute top-0  bg-slate-200 center md:space-x-6 min-h-screen py-5 flex-wrap '>
         <Group/>
         <Group/>
         <Group/>

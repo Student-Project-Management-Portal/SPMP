@@ -3,6 +3,9 @@
 @import "tailwindcss/utilities";
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
+*{
+    box-sizing: border-box;
+}
 .tshadow{
     text-shadow: 1px 1px 4px gray;
 }

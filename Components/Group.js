@@ -39,7 +39,7 @@ const Group = (props) => {
             </>}
            </div>
           <br />
-          <button className="button text-sm"><a href={props.link}>More Details</a></button>
+          <button className="button text-sm"><a href={"/project/detail"}>More Details</a></button>
       </div>
     </div>
   )

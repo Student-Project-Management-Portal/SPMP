@@ -17,7 +17,7 @@ const Member = (props) => {
     */
 
   return (
-    <div className=' rounded-md drop-shadow-xl flex items-center  mx-0 md:mx-3 my-3 justify-around px-2 md:px-4 py-4 space-x-3 w-fit md:w-full h-auto bg-slate-100 '>
+    <div className=' rounded-md drop-shadow-xl flex items-center  mx-0 md:mx-3 my-3 justify-around px-2 md:px-4 py-4 space-x-3 w-fit  h-auto bg-slate-100 '>
         {/* left */}
         <div className="w-1/6  center">
             <div className='w-11/12 overflow-hidden center aspect-square rounded-full drop-shadow-lg border-4 border-slate-300 bg-slate-400'>

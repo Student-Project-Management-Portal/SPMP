@@ -7,14 +7,14 @@ const page = () => {
         <div className='w-screen min-h-screen  p-2 md:p-10 space-y-7 flex flex-col overflow-hidden'>
             <h1 className='text-4xl font-bold my-4 text-gray-700 tshadow' >Software Project Management App</h1>
 
-            <div className='w-screen  mt-3 space-x-2 flex  px-0 md:px-4 items-start flex-col md:flex-row' >
+            <div className='w-full  mt-3 space-x-2 flex  px-0 md:px-4 items-start flex-col md:flex-row' >
                 {/* left links etc */}
-                <div className='w-screen md:w-1/2'>
+                <div className='w-full md:w-1/2'>
                     <div className='mx-1 md:mx-5 my-5'>
                     <h2 className='text-lg font-medium'>Description:</h2>
-                        <div className='shadow-lg bg-slate-100 p-4 rounded-md mt-4' >
+                        <div className='shadow-lg bg-slate-100 p-1 md:p-4 w-fit rounded-md mt-4' >
                             {/* <p className='text-slate-900'> Description:</p> */}
-                            <p className='text-gray-400 mx-4'>
+                            <p className='text-gray-400 mx-2 md:mx-4'>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium similique perspiciatis id blanditiis quia. Omnis, dolor quas corporis porro iure sed facere aspernatur sit velit? Commodi doloribus quis porro vero?
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium similique perspiciatis id blanditiis quia. Omnis, dolor quas corporis porro iure sed facere aspernatur sit velit? Commodi doloribus quis porro vero?
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium similique perspiciatis id blanditiis quia. Omnis, dolor quas corporis porro iure sed facere aspernatur sit velit? Commodi doloribus quis porro vero?
@@ -53,7 +53,7 @@ const page = () => {
                     </div>
                 </div>
                 {/* right links etc */}
-                <div className='w-screen md:w-1/2 px-1 md:px-5 py-4'>
+                <div className='w-full md:w-1/2 px-1 md:px-5 py-4'>
                     <h2 className='text-lg font-medium'>Team Members:</h2>
                     <Member />
                     <Member />
